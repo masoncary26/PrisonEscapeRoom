@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<title> The Cell</title>
+	<link rel ="stylesheet" href = "css/projectStyles.css" />
+	<script type = "text/javascript" src = "js/myjs.js"></script>
+	<center>
+		<p class="myText"> Welcome to the Cell</p>
+
+	</center>
+</head>
+<body>
+		<div class ="big-container">
+			<img src="images\prisonBars.png" class ="prisonBars" >
+
+			<div class="inventory" id = "displayMyInventory">
+				<center>
+       				<p class = "items">Inventory</p>
+				</center>
+			</div>
+
+			<div class="container">
+        			<img src="images/cell.png"  class = "image-cell">
+				<img src="images/bed.png" class ="image-bed" >
+				<img src="images/toilet.png" class ="image-toilet" >
+				<a href="ventilationShaft.html"><img src="images/vent.png" class ="image-vent" ></a>
+				<img id ="panel" src="images/panel.png" class ="image-panel" onclick ="closeModal('panel')">
+				<img src="images/shelf.png" class ="image-shelf">
+
+				<button id="bookButton" onclick="openModal('modal')">Invisible Button</button>
+				<button id="SNoteButton" onclick="openModal('modal1')">Invisible Button</button>
+				<button id="tcrowButton" onclick="openModal('modal2')">Invisible Button</button>
+    			</div>
+
+		</div>
+
+
+
+
+		<div class = "bg-modal" style="display:none;" id = "modal">
+			<center>
+			<div class = "modal-content">
+				<img src="images/GBook.png" class ="image-GBook" onclick = "addToInventory('Screw Driver')">
+				<button type="button" onclick ="closeModal('modal')"> Back  </button>
+			</div>
+			</center>
+		</div>
+
+		<div class = "bg-modal" style="display:none;" id = "modal1">
+			<center>
+			<div class = "modal-content">
+				<img src="images/SNote.png" class ="image-SNote" >
+				<button type="button" onclick ="closeModal('modal1')"> Back  </button>
+			</div>
+			</center>
+		</div>
+
+		<div class = "bg-modal" style="display:none;" id = "modal2">
+			<center>
+			<div class = "modal-content">
+				<img src="images/tcrow.png" class ="image-tcrow" onclick = "addToInventory('Crow Bar')" >
+				<button type="button" onclick ="closeModal('modal2')"> Back  </button>
+			</div>
+			</center>
+		</div>
+</body>
+</html>

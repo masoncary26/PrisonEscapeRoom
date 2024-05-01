@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> The Car Garage</title>
+<link rel ="stylesheet" href = "css/styles.css" />
+<script type = "text/javascript" src = "js/script.js"></script>
+<center>
+<p class="myText"> Welcome to the Car Garage</p>
+
+</center>
+</head>
+<body>
+
+
+<div class ="big-container">
+<img src="img/bars.png" class ="prisonBars" >
+
+<div class="inventory" id="displayMyInventory">
+	<center>
+        <p class = "items">Inventory</p>
+	</center>
+</div>
+<div class="container">
+    <img src="img/Garage/garage.png"  class = "image-garage">
+	<img src="img/Garage/police.png" class ="image-police" >
+	
+	<button id="DoorButton" onclick="openModal('modal7')">Invisible Button</button>
+	<button id="GarageButton" onclick="openModal('modal9')">Invisible Button</button>
+	
+    </div>
+</div>
+
+	<div class = "bg-modal" style="display:none;" id="modal7">
+		<center>
+		<div class="modal-content">
+			<img src="img/Garage/cdoor.png" class ="image-cdoor" >
+			<button id="dbutton" type="button" onclick="closeModal('modal7')">Back</button>
+			
+			<button id="Dnote" onclick="openModal('modal8')">Invisible Button</button>
+			<button id="Endbutton" onclick="document.location='congratulations.html'">Invisible Button</button>
+			
+			<div class = "bg-modal" style="display:none;" id="modal8">
+				<center>
+					<div class="modal-content">
+					<img src="img/Garage/carnote.png" class ="image-carnote">
+					<button type="button" id="dcbutton" onclick="closeModal('modal8')">Back</button>
+					</div>
+				</center>
+			</div>
+		</div>
+		</center>
+	</div>
+	
+	<div class = "bg-modal" style="display:none;" id="modal9">
+		<center>
+		<div class="modal-content">
+			<img src="img/Garage/gdoor.png" class ="image-gdoor">
+			<button type="button" id="garagebutton" onclick="closeModal('modal9')">Back</button>
+			
+			<button id="Color" onclick="openModal('modal10')">Invisible Button</button>
+			
+			<div class = "bg-modal" style="display:none;" id="modal10">
+				<center>
+					<div class="modal-content">
+					<img src="img/Garage/color.png" class ="image-color">
+					<button type="button" id="colorbutton" onclick="closeModal('modal10')">Back</button>
+					</div>
+				</center>
+			</div>
+		</div>
+		</center>
+	</div>
+
+	<img src="img/Garage/garage2.png" class ="image-garage2">
+	
+</html>

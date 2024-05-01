@@ -1,0 +1,387 @@
+body{
+	background: #4F4F59;
+}
+
+.myText{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	padding: 50px;
+	font-family: Courier New;
+	font-weight: bold;
+	font-size: 60px;
+	position: relative;
+	top: -60px;
+	background: linear-gradient(to right, #eee, black, #eee);
+}
+.items{
+	font-weight: bold;
+	font-size: 40px;
+	font-family: Courier New;
+}
+.inventory{
+	position: absolute;
+	background-color: #383f4a;
+	top: 0%;
+	right: 0%;
+	width: 20%;
+	height: 100%;
+
+}
+.big-container{
+	position: relative;
+	top: -120px;
+	width: 98vw;
+	height: 100vh;
+}
+.prisonBars{
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	position: absolute;
+	bottom: 18%;
+	left: 0%;
+	width: 80%;
+	height: 63%;
+
+}
+
+.image-security{
+	width: 100%;
+	height: 100%;
+
+}
+
+.image-desk{
+	width: 40%;
+	height: 90%;
+	position:relative;
+	top:-201.7%;
+	right: -26%;
+}
+
+.image-opened{
+	position:relative;
+	top:-695px;
+	right: 1%;
+	width: 30%;
+	height: 80%;
+}
+
+.image-locker{
+	position:relative;
+	top:-623px;
+	right: 29%;
+}
+
+.image-keypad{
+	position:relative;
+	top:-1232px;
+	width:10%;
+	height:30%;
+	right:-13%;
+}
+
+.image-painting{
+	position:relative;
+	bottom: 267%;
+	right: -16.5%;
+	width: 14%;
+	height: 30%; 
+}
+
+.image-calendar{
+	position:relative;
+	bottom: 267%;
+	right: -15.5%;
+	width: 14%;
+	height: 30%;
+}
+
+.image-garage{
+	width:100%;
+	height:100%;
+}
+
+.image-garage2{}
+
+.image-police{
+	position:relative;
+	top:-85%;
+	width:48%;
+	height:120%;
+	right:-28%;
+}
+
+.bg-modal{
+	width: 100%;
+	height: 130%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position:absolute;
+	top: 0;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.modal-content{
+	width: 700px;
+	height: 650px;
+	position: relative;
+	top: 500px;
+}
+
+.image-bpainting{
+	position:absolute;
+	top: -200px;
+	left: -200px;
+}
+
+.image-back{
+	position:absolute;
+	top: -150px;
+	left: -45%;
+}
+
+.image-dnote{
+	position: absolute;
+	left: -30%;
+}
+
+.image-cabinet{
+	position: absolute;
+	left: -28%;
+}
+
+.image-cnote{
+	position: relative;
+	left: -19%;
+	top: -85%;
+}
+
+.image-close{
+	position: relative;
+	left: -12%;
+}
+
+#PButton{
+	
+	position:absolute;
+	bottom: 43.5%;
+	right: 22.3%;
+	width: 6.7%;
+	height: 20%; 
+}
+	
+#CButton{
+	
+	position:absolute;
+	bottom: 43%;
+	right: 8.35%;
+	width: 8.5%;
+	height: 20%; 
+}
+
+#NButton{
+
+	position:relative;
+	top: -250%;
+	right: 43%;
+	width: 3%;
+	height: 7.3%; 
+}
+
+button{
+	position:absolute;
+	bottom: -70px;
+	right: 56%;
+	width: 60px;
+	height: 40px;
+}
+
+#padButton{
+
+	left: 16.7%;
+	top: 60%;
+}
+
+#keybutton{
+	position:absolute;
+	top: 120%;
+	right: 50%;
+	width: 60px;
+	height: 40px;
+}
+
+#notebutton{
+	position:absolute;
+	top: 135%;
+	right: 56%;
+	width: 60px;
+	height: 40px;
+}
+
+#cbutton{
+	bottom: -40%;
+}
+
+#cabbutton{
+	bottom: -25%;
+}
+
+#cnotebutton{
+	position:absolute;
+	top: 48%;
+	right: 47%;
+	width: 60px;
+	height: 40px;
+}
+
+#CabButton{
+
+	top: 77%;
+	width: 5%;
+	height: 15%;
+	right: 43%;
+}
+
+#CNButton{
+	opacity:0;
+	position:relative;
+	top: 63%;
+	left: -9%;
+	width: 28%;
+	height: 28%; 
+}
+
+#carbutton{
+	opacity:0; 
+	bottom: 38%;
+	right: 73%;
+}
+
+#displayMyInventory{
+	font-weight:bold;
+	font-size:40px;
+	font-family:Courier New;
+}
+
+#OneButton{
+	opacity:0;
+	width: 15%;
+	height: 15%;
+	top: 28%;
+	left: 15.7%;
+}
+
+#SevenButton{
+	opacity: 0;
+	width:15%;
+	height:15%;
+	top: 72.5%;
+	left:15.7%;
+}
+
+#CheckButton{
+	opacity: 0;
+	width: 15%;
+	height: 15%;
+	right: 34.8%;
+	top: 94.5%;
+}
+
+#doorButton{
+	opacity:0;
+	width:2%;
+	height:55%;
+	right:0%;
+	top: 45%;
+}
+
+#DoorButton{
+	opacity:0;
+	width: 10%;
+	height: 10%;
+	right: 40%;
+	top: 75%;
+}
+
+.image-cdoor{
+	position:relative;
+	left: -35%;
+	top: -50%;
+}
+
+#dbutton{
+	bottom: 30%;
+}
+
+#Dnote{
+	opacity: 0;
+	bottom:58%;
+	left: 40%;
+	width: 15%;
+	height: 18%;
+}
+
+#dcbutton{
+	bottom: 60%; 
+	right: 46.5%;
+}
+
+.image-carnote{
+	position: relative;
+	top: -87%;
+	left: -15.2%;
+}
+
+.image-cabnote{
+	position: relative;
+	top: -87%;
+	left: -18.5%;
+}
+
+#GarageButton{
+	opacity:0;
+	width:2%;
+	height:65%;
+	right:0%;
+	top: 35%;
+}
+
+.image-gdoor{
+	position:absolute;
+	left: -30%;
+	top: -23%;
+}
+
+#garagebutton{
+	top: 115%;
+}
+
+#Color{
+	opacity:0;
+	left: -20.5%;
+	top: 47%;
+	height: 10%;
+}
+
+.image-color{
+	position:relative;
+	top:-85%;
+	left: -17.2%;
+}
+
+#colorbutton{
+	top: 35%;
+	right: 47.5%;
+}
+
+#Endbutton{
+	opacity:0;
+	top: 21%;
+	width: 2%;
+	left: 36%;
+}

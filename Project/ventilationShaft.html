@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<title> The Ventilation Shaft</title>
+	<link rel ="stylesheet" href = "css/projectStyles.css" />
+	<script type = "text/javascript" src = "js/myjs.js"></script>
+	<center>
+		<p class="myText"> Welcome to the Ventilation Shaft</p>
+	</center>
+</head>
+<body>
+	<div class ="big-container">
+			<img src="images\prisonBars.png" class ="prisonBars" >
+			
+
+			<div class="inventory" id = "displayMyInventory">
+				<center>
+       				<p class = "items">Inventory</p>
+				</center>
+			</div>
+			<div class="container1">
+				<img src="images/backgroundvent3.png" class = "image-vent1">
+				<a href="securityRoom.html"><button id="ventButton">Invisible Button</button></a>
+
+				<img id = "vent2" src="images/backgroundvent2.png" class = "image-vent1">
+				<img id = "vent1" src="images/background1.png"  class = "image-vent1">
+				<img src="images/hole.png" class = "image-hole" onclick = "addToInventory('Wire Cutters')" >
+				<img src="images/wirebox.png" class = "image-wirebox">
+				<img src="images/ventKeyPad.png" class = "image-ventKeyPad" >
+
+				<button id="wiresButton" onclick="openModal('modal3')">Invisible Button</button>
+				<button id="keypadButton" onclick="openModal('modal4')">Invisible Button</button>
+
+				
+
+			</div>
+
+		</div>
+		
+		<div class = "bg-modal" style="display:none;" id = "modal3">
+			<center>
+			<div class = "modal-content">
+				<img src="images/wires.png" class ="image-wires" >
+				<button type="button" onclick ="closeModal('modal3')"> Back  </button>
+				<button id="redwire" onclick="closeModal('vent1')">Invisible Button</button>
+
+			</div>
+			</center>
+		</div>
+
+		<div class = "bg-modal" style="display:none;" id = "modal4">
+			<center>
+			<div class = "modal-content">
+				<img src="images/keypad.png" class ="image-keypad" >
+				<button type="button" onclick ="closeModal('modal4')"> Back  </button>
+				<button id="purpleButton" onclick="closeModal('vent2')">Invisible Button</button>
+
+			</div>
+			</center>
+		</div>
+
+</body>
+</html>

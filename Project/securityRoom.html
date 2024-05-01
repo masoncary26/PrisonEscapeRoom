@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> The Security Room</title>
+<link rel ="stylesheet" href = "css/styles.css" />
+<script type = "text/javascript" src = "js/script.js"></script>
+<center>
+<p class="myText"> Welcome to the Security Room</p>
+
+</center>
+</head>
+<body>
+
+
+<div class ="big-container">
+	<img src="img/bars.png" class ="prisonBars" >
+
+	<div class="inventory" id="displayMyInventory">
+		<center>
+        <p class = "items">Inventory</p>
+		</center>
+	</div>
+	<div class="container">
+        <img src="img/SecurityRoom/security.png"  class = "image-security">
+		<img src="img/SecurityRoom/opened.png" class ="image-opened">
+		<img src="img/SecurityRoom/closedv3.png" class ="image-locker">
+		<img src="img/SecurityRoom/desk.png" class ="image-desk" >
+		<img src="img/SecurityRoom/keypad.png" class ="image-keypad">
+		<img src="img/SecurityRoom/painting.png" class ="image-painting">
+		<img src="img/SecurityRoom/calendar.png" class ="image-calendar">
+		
+		<button id="PButton" onclick="openModal('modal')">Invisible Button</button>
+		<button id="CButton" onclick="openModal('modal2')">Invisible Button</button>
+		<button id="NButton" onclick="openModal('modal3')">Invisible Button</button>
+		<button id="CabButton" onclick="openModal('modal4')">Invisible Button</button>
+		<button id="padButton" onclick="openModal('modal6')">Invisible Button</button>
+		<button id="doorButton" onclick="document.location='parkingGarage.html'">Invisible Button</button>
+		
+    </div>
+</div>
+
+	<div class = "bg-modal" style="display:none;" id="modal">
+		<center>
+		<div class="modal-content">
+			<img src="img/SecurityRoom/bpainting.png" class ="image-bpainting" onclick="addToInventory('Desk Key')">
+			<button type="button" onclick="closeModal('modal')">Back</button>
+		</div>
+		</center>
+	</div>
+	
+	<div class = "bg-modal" style="display:none;" id="modal2">
+		<center>
+		<div class="modal-content">
+			<img src="img/SecurityRoom/zcalender.png" class ="image-back">
+			<button type="button" id="cbutton" onclick="closeModal('modal2')">Back</button>
+		</div>
+		</center>
+	</div>
+	
+	<div class = "bg-modal" style="display:none;" id="modal3">
+		<center>
+		<div class="modal-content">
+			<img src="img/SecurityRoom/dnote.png" class ="image-dnote">
+			<button type="button" id="notebutton" onclick="closeModal('modal3')">Back</button>
+		</div>
+		</center>
+	</div>
+	
+	<div class = "bg-modal" style="display:none;" id="modal4">
+		<center>
+		<div class="modal-content">
+			<img src="img/SecurityRoom/cabinet.png" class ="image-cabinet">
+			<button type="button" id="cabbutton" onclick="closeModal('modal4')">Back</button>
+			
+			<button id="CNButton" onclick="openModal('modal5')">Invisible Button</button>
+			<button id="carbutton" onclick="addToInventory('Car Key')">Invisible Button</button>
+			
+			<div class = "bg-modal" style="display:none;" id="modal5">
+				<center>
+					<div class="modal-content">
+					<img src="img/SecurityRoom/cabnote.png" class ="image-cabnote">
+					<button type="button" id="cnotebutton" onclick="closeModal('modal5')">Back</button>
+					</div>
+				</center>
+			</div>
+		</div>
+		</center>
+	</div>
+	
+	<div class = "bg-modal" style="display:none;" id="modal6">
+		<center>
+		<div class="modal-content">
+			<img src="img/SecurityRoom/keyclose.png" class ="image-close">
+			<button type="button" id="keybutton" onclick="closeModal('modal6')">Back</button>
+			
+			<button id="OneButton">Invisible Button</button>
+			<button id="SevenButton">Invisible Button</button>
+			<button id="CheckButton">Invisible Button</button>
+			
+			
+			
+		</div>
+		</center>
+	</div>
+
+		<img src="img/SecurityRoom/lnote.png" class ="image-lnote">
+
+</html>
